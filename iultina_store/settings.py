@@ -8,7 +8,7 @@ SECRET_KEY = 'django-insecure-li@!6ixmc2-kk-t%o=s@id*5@=p!t9)1_743xh%8#n3qgs$7+q
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['iultinastore--iultina.repl.co', '10.20.0.122']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
