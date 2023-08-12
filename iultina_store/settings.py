@@ -8,7 +8,7 @@ SECRET_KEY = 'django-insecure-li@!6ixmc2-kk-t%o=s@id*5@=p!t9)1_743xh%8#n3qgs$7+q
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['iultinastore--iultina.repl.co', '10.20.0.122']
+ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -18,6 +18,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'store.apps.StoreConfig',
+    'accounts.apps.AccountsConfig',
 ]
 
 MIDDLEWARE = [
@@ -29,6 +30,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+AUTH_USER_MODEL = 'accounts.Account'
 
 ROOT_URLCONF = 'iultina_store.urls'
 
